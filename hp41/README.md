@@ -10,9 +10,11 @@ This is still work-in-progress. Programs are implemented on-demand, feel free to
 
 DST (Distance, Speed, Time) is a limited re-implementation from scratch of the FM program contained in the HP-41C AVIATION PAC release by HP. It behaves similary but does not currently support the fuel calculation functionality of the FM program.
 
-When started it emits `D=S*T      X`. The idea is to set any two of the three values in the `D=S*T` formula and solve for the third. To set one of the values, enter the desired value on the keypad and press the A, B or C button, the button association follows the same order as the formula printed on screen, i.e. A for D, B for S, C for T. To solve for the third variable, just press the desired button without entering a numerical value first. The X button closes the program and cleans up the state.
+When started it emits `D=S*T      X`. The idea is to set any two of the three values in the `D=S*T` formula and solve for the third. To set one of the values, enter the desired value (for time in the HH.MMSS format) on the keypad and press the A, B or C button, the button association follows the same order as the formula printed on screen, i.e. A for D, B for S, C for T. To solve for the third variable, just press the desired button without entering a numerical value first. The X button closes the program and cleans up the state.
 
 It expects no parameters as it is entirely interactive. while running it activates user mode and modifies printing flags. The flags are restored when exiting the program using the X button.
+
+PTHMS is a helper program to emit time information in a more user-friendly format. It is not meant to be invoked directly by the user.
 
 ## INMB and MBIN
 
